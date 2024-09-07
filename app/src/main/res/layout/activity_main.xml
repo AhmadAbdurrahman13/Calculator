@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etNumber1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan angka pertama"
+        android:inputType="numberDecimal" />
+
+    <!-- EditText untuk input angka kedua -->
+    <EditText
+        android:id="@+id/etNumber2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan angka kedua"
+        android:inputType="numberDecimal" />
+
+    <!-- RadioGroup untuk memilih operasi -->
+    <RadioGroup
+        android:id="@+id/rg_Operasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/tambah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+" />
+
+        <RadioButton
+            android:id="@+id/kurang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-" />
+
+        <RadioButton
+            android:id="@+id/kali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*" />
+
+        <RadioButton
+            android:id="@+id/bagi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/" />
+    </RadioGroup>
+
+    <!-- Button untuk melakukan perhitungan -->
+    <Button
+        android:id="@+id/btn_Hitung"
+        android:layout_width="381dp"
+        android:layout_height="wrap_content"
+        android:text="Hitung" />
+</LinearLayout>
